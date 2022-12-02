@@ -34,11 +34,13 @@ void PrintArray(string[] array)
     Console.Write($"{array[array.Length-1]}]");
 }
 
-Console.WriteLine("Введите набор слов через разной длины. Для разделения используйте один пробел");
+Console.WriteLine("Введите набор слов разной длины. Для разделения используйте один пробел");
 Console.WriteLine("Когда захотите остановиться, нажмите Enter");
-
+Console.WriteLine();
 string[] result = GetArrayWordsThreeCharacters(Console.ReadLine().Split(" "));
-
+Console.WriteLine();
+Console.WriteLine("Массив из строк, длина которых <= 3 символам:");
+Console.WriteLine();
 PrintArray(result);
 
 Console.ReadKey();
